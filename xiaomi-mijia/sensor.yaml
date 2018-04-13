@@ -1,0 +1,20 @@
+
+  - platform: mqtt
+    state_topic: 'home/indoor/xiaomi/sensor1'
+    name: 'Sala Humid'
+    icon: mdi:water-percent
+    unit_of_measurement: '%'
+    value_template: '{{ value_json.humidity }}'
+  - platform: mqtt
+    state_topic: 'home/indoor/xiaomi/sensor1'
+    name: 'Sala Temp'
+    icon: mdi:thermometer
+    unit_of_measurement: 'ºC'
+    value_template: '{{ value_json.temperature }}'
+  - platform: mqtt
+    state_topic: 'home/indoor/xiaomi/sensor1'
+    name: 'Sala Batt'
+    icon: mdi:battery
+    unit_of_measurement: '%'
+    value_template: '{{ value_json.battery }}'
+
